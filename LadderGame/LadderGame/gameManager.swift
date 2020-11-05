@@ -10,7 +10,7 @@ import Foundation
 let input = readLine() ?? ""
 
 struct LadderGame {
-    func createGame() {
+    func startGame() {
         guard let players: Int = Int(input) else {
             fatalError("게임에 참여할 인원을 숫자로 입력해주세요.")
         }

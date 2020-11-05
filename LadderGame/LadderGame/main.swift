@@ -8,4 +8,4 @@
 import Foundation
 
 var myGame = LadderGame()
-myGame.createGame()
+myGame.startGame()

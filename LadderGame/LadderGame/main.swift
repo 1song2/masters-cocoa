@@ -7,5 +7,5 @@
 
 import Foundation
 
-var newGame = LadderGame()
-newGame.createGame()
+var myGame = LadderGame()
+myGame.createGame()

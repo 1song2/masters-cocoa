@@ -42,8 +42,8 @@ struct LadderGame {
     func addStep(for players: Int) -> Array<String> {
         var step = Array<String>()
         let max = (players * 2) - 1
-        for dividend in 1...max {
-            if dividend % 2 != 0 {
+        for column in 1...max {
+            if column % 2 != 0 {
                 step.append("|")
             } else {
                 if Int.random(in: 0...100) % 2 == 0 {

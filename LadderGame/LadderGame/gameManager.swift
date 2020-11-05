@@ -25,7 +25,7 @@ struct LadderGame {
     func printLadder(array: Array<Array<String>>) {
         for innerArray in array {
             for item in innerArray {
-                print(item, terminator: " ")
+                print(item, terminator: "")
             }
             print()
         }

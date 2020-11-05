@@ -34,12 +34,12 @@ struct LadderGame {
     func createLadder(with players: Int, height: Int) -> Array<Array<String>> {
         var resultArray = Array<Array<String>>()
         for _ in 1...height {
-            resultArray.append(putStep(for: players))
+            resultArray.append(addStep(for: players))
         }
         return resultArray
     }
     
-    func putStep(for players: Int) -> Array<String> {
+    func addStep(for players: Int) -> Array<String> {
         var step = Array<String>()
         let max = (players * 2) - 1
         for dividend in 1...max {

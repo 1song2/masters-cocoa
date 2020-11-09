@@ -18,5 +18,10 @@ import Foundation
 //myBoolArray.printArray(array: myBoolArray.setBoolArray(), newChar: "$")
 //print()
 
-//연습문제4. 주민번호 판별검사
-print(RRNValidator(RRN: "1234561234567"))
+// 연습문제4. 주민번호 판별검사
+//print(RRNValidator(RRN: "1234561234567"))
+//print()
+
+// 연습문제6. 사전(Dictionary) 활용하기
+print(duplicatedWords(inputWords: ["가을", "우주", "너굴", "우주", "겨울", "봄봄", "너굴", "너굴"]))
+

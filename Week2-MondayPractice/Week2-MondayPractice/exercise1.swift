@@ -7,7 +7,8 @@
 
 import Foundation
 
-// 미션1. 2차원 배열만들기 & 출력하기
+// 연습문제1 - 배열
+/// 미션1. 2차원 배열만들기 & 출력하기
 struct ArrayPractice {
     func printArray(array: Array<Array<Int>>) {
         for index in 0...4 {
@@ -30,8 +31,7 @@ struct ArrayPractice {
     }
 }
 
-// 미션2. setBoolArray와 printArray
-
+/// 미션2. setBoolArray와 printArray
 struct BoolArray {
     func setBoolArray() -> Array<Array<Bool>> {
         var outerArray = Array<Array<Bool>>()

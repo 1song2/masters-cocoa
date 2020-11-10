@@ -16,12 +16,8 @@ func RRNValidator(RRN: String) -> Bool {
     var n = 2
     var N = 0
     for index in 0..<(array.count - 1) {
-        N += array[index] + n
-        if n == 9 {
-            n = 2
-        } else {
-            n += 1
-        }
+        N += (n * array[index])
+        n = (n == 9) ? 2 : n + 1
     }
     let K = (11 - (N % 11)) % 10
     if K == array[array.count - 1] {

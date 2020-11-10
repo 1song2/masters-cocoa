@@ -12,7 +12,8 @@ func duplicatedWords(inputWords: Array<String>) -> Array<String> {
     var dictionary = [String: Int]()
     let countedSet = NSCountedSet(array: inputWords)
     for item in countedSet {
-        dictionary[item as! String] = countedSet.count(for: item)
+        //dictionary[item as! String] = countedSet.count(for: item)
+        dictionary.updateValue(countedSet.count(for: item), forKey: item as! String)
     }
     //return Array(dictionary.filter { $1 >= 2 }.keys)
     return Array(dictionary.filter({ (dict) -> Bool in

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4919962255A2515005A6B95 /* exercise2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4919961255A2515005A6B95 /* exercise2.swift */; };
+		E4919965255A2520005A6B95 /* exercise3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4919964255A2520005A6B95 /* exercise3.swift */; };
+		E4919969255A252A005A6B95 /* exercise5.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4919968255A252A005A6B95 /* exercise5.swift */; };
 		E4B68EE02558D2F4004B1437 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B68EDF2558D2F4004B1437 /* main.swift */; };
 		E4B68EE82558D4BF004B1437 /* exercise1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B68EE72558D4BF004B1437 /* exercise1.swift */; };
 		E4B68EEE2559215F004B1437 /* exercise4.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B68EED2559215F004B1437 /* exercise4.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E4919961255A2515005A6B95 /* exercise2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise2.swift; sourceTree = "<group>"; };
+		E4919964255A2520005A6B95 /* exercise3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise3.swift; sourceTree = "<group>"; };
+		E4919968255A252A005A6B95 /* exercise5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise5.swift; sourceTree = "<group>"; };
 		E4B68EDC2558D2F4004B1437 /* Week2-MondayPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Week2-MondayPractice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B68EDF2558D2F4004B1437 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E4B68EE72558D4BF004B1437 /* exercise1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise1.swift; sourceTree = "<group>"; };
@@ -65,7 +71,10 @@
 			children = (
 				E4B68EDF2558D2F4004B1437 /* main.swift */,
 				E4B68EE72558D4BF004B1437 /* exercise1.swift */,
+				E4919961255A2515005A6B95 /* exercise2.swift */,
+				E4919964255A2520005A6B95 /* exercise3.swift */,
 				E4B68EED2559215F004B1437 /* exercise4.swift */,
+				E4919968255A252A005A6B95 /* exercise5.swift */,
 				E4B68EF1255936B2004B1437 /* exercise6.swift */,
 			);
 			path = "Week2-MondayPractice";
@@ -129,9 +138,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B68EF2255936B2004B1437 /* exercise6.swift in Sources */,
+				E4919965255A2520005A6B95 /* exercise3.swift in Sources */,
 				E4B68EE02558D2F4004B1437 /* main.swift in Sources */,
 				E4B68EE82558D4BF004B1437 /* exercise1.swift in Sources */,
 				E4B68EEE2559215F004B1437 /* exercise4.swift in Sources */,
+				E4919969255A252A005A6B95 /* exercise5.swift in Sources */,
+				E4919962255A2515005A6B95 /* exercise2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

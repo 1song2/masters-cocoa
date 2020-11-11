@@ -27,7 +27,7 @@ struct InterestRate {
     func calculateAmount(day: Int, amount: Int) -> Double {
         let interestRate = getInterestRate(by: day)
         let originalAmount = Double(amount)
-        let interest = originalAmount * interestRate
+        let interest = (originalAmount * interestRate) * (Double(day) / Double(365))
         return originalAmount + interest
     }
 }

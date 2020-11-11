@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  passwordValidator
+//  PasswordValidator
 //
 //  Created by Song on 2020/11/11.
 //
@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var passwordInput: UITextField!
     @IBOutlet weak var levelView: UIView!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -26,17 +26,9 @@ class ViewController: UIViewController {
         symbol.insert(charactersIn: "-+!@#$%")
         
         condition.length = password.count >= 8
-        // isEmpty로 고쳐볼 수 있을까?
         condition.alphabet = (password.rangeOfCharacter(from: alphabet) != nil)
-        // inverted는 only 일때인가?
-        // inverted 왜 들어가지? != 대신 == 사용
         condition.number = (password.rangeOfCharacter(from: number) != nil)
         condition.symbol = (password.rangeOfCharacter(from: symbol) != nil)
-        
-        print(condition)
-        //print(alphabet)
-        //print(number)
-        //print(symbol)
         
         switch condition {
         case (length: true, alphabet: true, number: true, symbol: true):
@@ -53,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func validateButtonPressed(_ sender: UIButton) {
-        switch passwordValidator(password: passwordInput.text!) {
+        switch passwordValidator(password: passwordInput.text ?? "") {
         case 1:
             levelView.backgroundColor = .red
             descriptionLabel.text = "아주 약한 암호"

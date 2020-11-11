@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4D5E480255BCAC7002B6F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E47F255BCAC7002B6F39 /* AppDelegate.swift */; };
-		E4D5E482255BCAC7002B6F39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E481255BCAC7002B6F39 /* SceneDelegate.swift */; };
-		E4D5E484255BCAC7002B6F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E483255BCAC7002B6F39 /* ViewController.swift */; };
-		E4D5E487255BCAC7002B6F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E485255BCAC7002B6F39 /* Main.storyboard */; };
-		E4D5E489255BCACB002B6F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E488255BCACB002B6F39 /* Assets.xcassets */; };
-		E4D5E48C255BCACB002B6F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E48A255BCACB002B6F39 /* LaunchScreen.storyboard */; };
+		E4D5E4A1255BCEDA002B6F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E4A0255BCEDA002B6F39 /* AppDelegate.swift */; };
+		E4D5E4A3255BCEDA002B6F39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E4A2255BCEDA002B6F39 /* SceneDelegate.swift */; };
+		E4D5E4A5255BCEDA002B6F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E4A4255BCEDA002B6F39 /* ViewController.swift */; };
+		E4D5E4A8255BCEDA002B6F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E4A6255BCEDA002B6F39 /* Main.storyboard */; };
+		E4D5E4AA255BCEDB002B6F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E4A9255BCEDB002B6F39 /* Assets.xcassets */; };
+		E4D5E4AD255BCEDB002B6F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E4AB255BCEDB002B6F39 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E4D5E47C255BCAC7002B6F39 /* passwordValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwordValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4D5E47F255BCAC7002B6F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4D5E481255BCAC7002B6F39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4D5E483255BCAC7002B6F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E4D5E486255BCAC7002B6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E4D5E488255BCACB002B6F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E4D5E48B255BCACB002B6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E4D5E48D255BCACB002B6F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D5E49D255BCEDA002B6F39 /* PasswordValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D5E4A0255BCEDA002B6F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4D5E4A2255BCEDA002B6F39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E4D5E4A4255BCEDA002B6F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4D5E4A7255BCEDA002B6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4D5E4A9255BCEDB002B6F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4D5E4AC255BCEDB002B6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4D5E4AE255BCEDB002B6F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E4D5E479255BCAC7002B6F39 /* Frameworks */ = {
+		E4D5E49A255BCEDA002B6F39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,71 +37,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E4D5E473255BCAC7002B6F39 = {
+		E4D5E494255BCEDA002B6F39 = {
 			isa = PBXGroup;
 			children = (
-				E4D5E47E255BCAC7002B6F39 /* passwordValidator */,
-				E4D5E47D255BCAC7002B6F39 /* Products */,
+				E4D5E49F255BCEDA002B6F39 /* PasswordValidator */,
+				E4D5E49E255BCEDA002B6F39 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E4D5E47D255BCAC7002B6F39 /* Products */ = {
+		E4D5E49E255BCEDA002B6F39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4D5E47C255BCAC7002B6F39 /* passwordValidator.app */,
+				E4D5E49D255BCEDA002B6F39 /* PasswordValidator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E4D5E47E255BCAC7002B6F39 /* passwordValidator */ = {
+		E4D5E49F255BCEDA002B6F39 /* PasswordValidator */ = {
 			isa = PBXGroup;
 			children = (
-				E4D5E47F255BCAC7002B6F39 /* AppDelegate.swift */,
-				E4D5E481255BCAC7002B6F39 /* SceneDelegate.swift */,
-				E4D5E483255BCAC7002B6F39 /* ViewController.swift */,
-				E4D5E485255BCAC7002B6F39 /* Main.storyboard */,
-				E4D5E488255BCACB002B6F39 /* Assets.xcassets */,
-				E4D5E48A255BCACB002B6F39 /* LaunchScreen.storyboard */,
-				E4D5E48D255BCACB002B6F39 /* Info.plist */,
+				E4D5E4A0255BCEDA002B6F39 /* AppDelegate.swift */,
+				E4D5E4A2255BCEDA002B6F39 /* SceneDelegate.swift */,
+				E4D5E4A4255BCEDA002B6F39 /* ViewController.swift */,
+				E4D5E4A6255BCEDA002B6F39 /* Main.storyboard */,
+				E4D5E4A9255BCEDB002B6F39 /* Assets.xcassets */,
+				E4D5E4AB255BCEDB002B6F39 /* LaunchScreen.storyboard */,
+				E4D5E4AE255BCEDB002B6F39 /* Info.plist */,
 			);
-			path = passwordValidator;
+			path = PasswordValidator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4D5E47B255BCAC7002B6F39 /* passwordValidator */ = {
+		E4D5E49C255BCEDA002B6F39 /* PasswordValidator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4D5E490255BCACB002B6F39 /* Build configuration list for PBXNativeTarget "passwordValidator" */;
+			buildConfigurationList = E4D5E4B1255BCEDB002B6F39 /* Build configuration list for PBXNativeTarget "PasswordValidator" */;
 			buildPhases = (
-				E4D5E478255BCAC7002B6F39 /* Sources */,
-				E4D5E479255BCAC7002B6F39 /* Frameworks */,
-				E4D5E47A255BCAC7002B6F39 /* Resources */,
+				E4D5E499255BCEDA002B6F39 /* Sources */,
+				E4D5E49A255BCEDA002B6F39 /* Frameworks */,
+				E4D5E49B255BCEDA002B6F39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = passwordValidator;
-			productName = passwordValidator;
-			productReference = E4D5E47C255BCAC7002B6F39 /* passwordValidator.app */;
+			name = PasswordValidator;
+			productName = PasswordValidator;
+			productReference = E4D5E49D255BCEDA002B6F39 /* PasswordValidator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E4D5E474255BCAC7002B6F39 /* Project object */ = {
+		E4D5E495255BCEDA002B6F39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					E4D5E47B255BCAC7002B6F39 = {
+					E4D5E49C255BCEDA002B6F39 = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
 			};
-			buildConfigurationList = E4D5E477255BCAC7002B6F39 /* Build configuration list for PBXProject "passwordValidator" */;
+			buildConfigurationList = E4D5E498255BCEDA002B6F39 /* Build configuration list for PBXProject "PasswordValidator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,55 +109,55 @@
 				en,
 				Base,
 			);
-			mainGroup = E4D5E473255BCAC7002B6F39;
-			productRefGroup = E4D5E47D255BCAC7002B6F39 /* Products */;
+			mainGroup = E4D5E494255BCEDA002B6F39;
+			productRefGroup = E4D5E49E255BCEDA002B6F39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4D5E47B255BCAC7002B6F39 /* passwordValidator */,
+				E4D5E49C255BCEDA002B6F39 /* PasswordValidator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E4D5E47A255BCAC7002B6F39 /* Resources */ = {
+		E4D5E49B255BCEDA002B6F39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D5E48C255BCACB002B6F39 /* LaunchScreen.storyboard in Resources */,
-				E4D5E489255BCACB002B6F39 /* Assets.xcassets in Resources */,
-				E4D5E487255BCAC7002B6F39 /* Main.storyboard in Resources */,
+				E4D5E4AD255BCEDB002B6F39 /* LaunchScreen.storyboard in Resources */,
+				E4D5E4AA255BCEDB002B6F39 /* Assets.xcassets in Resources */,
+				E4D5E4A8255BCEDA002B6F39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E4D5E478255BCAC7002B6F39 /* Sources */ = {
+		E4D5E499255BCEDA002B6F39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D5E484255BCAC7002B6F39 /* ViewController.swift in Sources */,
-				E4D5E480255BCAC7002B6F39 /* AppDelegate.swift in Sources */,
-				E4D5E482255BCAC7002B6F39 /* SceneDelegate.swift in Sources */,
+				E4D5E4A5255BCEDA002B6F39 /* ViewController.swift in Sources */,
+				E4D5E4A1255BCEDA002B6F39 /* AppDelegate.swift in Sources */,
+				E4D5E4A3255BCEDA002B6F39 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E4D5E485255BCAC7002B6F39 /* Main.storyboard */ = {
+		E4D5E4A6255BCEDA002B6F39 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E4D5E486255BCAC7002B6F39 /* Base */,
+				E4D5E4A7255BCEDA002B6F39 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E4D5E48A255BCACB002B6F39 /* LaunchScreen.storyboard */ = {
+		E4D5E4AB255BCEDB002B6F39 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E4D5E48B255BCACB002B6F39 /* Base */,
+				E4D5E4AC255BCEDB002B6F39 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E4D5E48E255BCACB002B6F39 /* Debug */ = {
+		E4D5E4AF255BCEDB002B6F39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		E4D5E48F255BCACB002B6F39 /* Release */ = {
+		E4D5E4B0255BCEDB002B6F39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,38 +281,38 @@
 			};
 			name = Release;
 		};
-		E4D5E491255BCACB002B6F39 /* Debug */ = {
+		E4D5E4B2255BCEDB002B6F39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M27T5LV4H;
-				INFOPLIST_FILE = passwordValidator/Info.plist;
+				INFOPLIST_FILE = PasswordValidator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.song.passwordValidator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.song.PasswordValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E4D5E492255BCACB002B6F39 /* Release */ = {
+		E4D5E4B3255BCEDB002B6F39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M27T5LV4H;
-				INFOPLIST_FILE = passwordValidator/Info.plist;
+				INFOPLIST_FILE = PasswordValidator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.song.passwordValidator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.song.PasswordValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4D5E477255BCAC7002B6F39 /* Build configuration list for PBXProject "passwordValidator" */ = {
+		E4D5E498255BCEDA002B6F39 /* Build configuration list for PBXProject "PasswordValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4D5E48E255BCACB002B6F39 /* Debug */,
-				E4D5E48F255BCACB002B6F39 /* Release */,
+				E4D5E4AF255BCEDB002B6F39 /* Debug */,
+				E4D5E4B0255BCEDB002B6F39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4D5E490255BCACB002B6F39 /* Build configuration list for PBXNativeTarget "passwordValidator" */ = {
+		E4D5E4B1255BCEDB002B6F39 /* Build configuration list for PBXNativeTarget "PasswordValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4D5E491255BCACB002B6F39 /* Debug */,
-				E4D5E492255BCACB002B6F39 /* Release */,
+				E4D5E4B2255BCEDB002B6F39 /* Debug */,
+				E4D5E4B3255BCEDB002B6F39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E4D5E474255BCAC7002B6F39 /* Project object */;
+	rootObject = E4D5E495255BCEDA002B6F39 /* Project object */;
 }

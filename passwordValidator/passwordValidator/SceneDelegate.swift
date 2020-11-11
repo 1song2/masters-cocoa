@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  passwordValidator
+//  PasswordValidator
 //
 //  Created by Song on 2020/11/11.
 //

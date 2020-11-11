@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Week2-WedPractice(3~4)
+//  passwordValidator
 //
 //  Created by Song on 2020/11/11.
 //

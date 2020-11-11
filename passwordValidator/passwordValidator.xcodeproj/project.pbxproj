@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4D5E45F255BB061002B6F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E45E255BB061002B6F39 /* AppDelegate.swift */; };
-		E4D5E461255BB061002B6F39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E460255BB061002B6F39 /* SceneDelegate.swift */; };
-		E4D5E463255BB061002B6F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E462255BB061002B6F39 /* ViewController.swift */; };
-		E4D5E466255BB061002B6F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E464255BB061002B6F39 /* Main.storyboard */; };
-		E4D5E468255BB063002B6F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E467255BB063002B6F39 /* Assets.xcassets */; };
-		E4D5E46B255BB063002B6F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E469255BB063002B6F39 /* LaunchScreen.storyboard */; };
+		E4D5E480255BCAC7002B6F39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E47F255BCAC7002B6F39 /* AppDelegate.swift */; };
+		E4D5E482255BCAC7002B6F39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E481255BCAC7002B6F39 /* SceneDelegate.swift */; };
+		E4D5E484255BCAC7002B6F39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D5E483255BCAC7002B6F39 /* ViewController.swift */; };
+		E4D5E487255BCAC7002B6F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E485255BCAC7002B6F39 /* Main.storyboard */; };
+		E4D5E489255BCACB002B6F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E488255BCACB002B6F39 /* Assets.xcassets */; };
+		E4D5E48C255BCACB002B6F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D5E48A255BCACB002B6F39 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E4D5E45B255BB061002B6F39 /* Week2-WedPractice(3~4).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week2-WedPractice(3~4).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4D5E45E255BB061002B6F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4D5E460255BB061002B6F39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4D5E462255BB061002B6F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E4D5E465255BB061002B6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E4D5E467255BB063002B6F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E4D5E46A255BB063002B6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E4D5E46C255BB063002B6F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D5E47C255BCAC7002B6F39 /* passwordValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwordValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D5E47F255BCAC7002B6F39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4D5E481255BCAC7002B6F39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E4D5E483255BCAC7002B6F39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4D5E486255BCAC7002B6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4D5E488255BCACB002B6F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4D5E48B255BCACB002B6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4D5E48D255BCACB002B6F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E4D5E458255BB061002B6F39 /* Frameworks */ = {
+		E4D5E479255BCAC7002B6F39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,71 +37,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E4D5E452255BB061002B6F39 = {
+		E4D5E473255BCAC7002B6F39 = {
 			isa = PBXGroup;
 			children = (
-				E4D5E45D255BB061002B6F39 /* Week2-WedPractice(3~4) */,
-				E4D5E45C255BB061002B6F39 /* Products */,
+				E4D5E47E255BCAC7002B6F39 /* passwordValidator */,
+				E4D5E47D255BCAC7002B6F39 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E4D5E45C255BB061002B6F39 /* Products */ = {
+		E4D5E47D255BCAC7002B6F39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4D5E45B255BB061002B6F39 /* Week2-WedPractice(3~4).app */,
+				E4D5E47C255BCAC7002B6F39 /* passwordValidator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E4D5E45D255BB061002B6F39 /* Week2-WedPractice(3~4) */ = {
+		E4D5E47E255BCAC7002B6F39 /* passwordValidator */ = {
 			isa = PBXGroup;
 			children = (
-				E4D5E45E255BB061002B6F39 /* AppDelegate.swift */,
-				E4D5E460255BB061002B6F39 /* SceneDelegate.swift */,
-				E4D5E462255BB061002B6F39 /* ViewController.swift */,
-				E4D5E464255BB061002B6F39 /* Main.storyboard */,
-				E4D5E467255BB063002B6F39 /* Assets.xcassets */,
-				E4D5E469255BB063002B6F39 /* LaunchScreen.storyboard */,
-				E4D5E46C255BB063002B6F39 /* Info.plist */,
+				E4D5E47F255BCAC7002B6F39 /* AppDelegate.swift */,
+				E4D5E481255BCAC7002B6F39 /* SceneDelegate.swift */,
+				E4D5E483255BCAC7002B6F39 /* ViewController.swift */,
+				E4D5E485255BCAC7002B6F39 /* Main.storyboard */,
+				E4D5E488255BCACB002B6F39 /* Assets.xcassets */,
+				E4D5E48A255BCACB002B6F39 /* LaunchScreen.storyboard */,
+				E4D5E48D255BCACB002B6F39 /* Info.plist */,
 			);
-			path = "Week2-WedPractice(3~4)";
+			path = passwordValidator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4D5E45A255BB061002B6F39 /* Week2-WedPractice(3~4) */ = {
+		E4D5E47B255BCAC7002B6F39 /* passwordValidator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4D5E46F255BB063002B6F39 /* Build configuration list for PBXNativeTarget "Week2-WedPractice(3~4)" */;
+			buildConfigurationList = E4D5E490255BCACB002B6F39 /* Build configuration list for PBXNativeTarget "passwordValidator" */;
 			buildPhases = (
-				E4D5E457255BB061002B6F39 /* Sources */,
-				E4D5E458255BB061002B6F39 /* Frameworks */,
-				E4D5E459255BB061002B6F39 /* Resources */,
+				E4D5E478255BCAC7002B6F39 /* Sources */,
+				E4D5E479255BCAC7002B6F39 /* Frameworks */,
+				E4D5E47A255BCAC7002B6F39 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Week2-WedPractice(3~4)";
-			productName = "Week2-WedPractice(3~4)";
-			productReference = E4D5E45B255BB061002B6F39 /* Week2-WedPractice(3~4).app */;
+			name = passwordValidator;
+			productName = passwordValidator;
+			productReference = E4D5E47C255BCAC7002B6F39 /* passwordValidator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E4D5E453255BB061002B6F39 /* Project object */ = {
+		E4D5E474255BCAC7002B6F39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					E4D5E45A255BB061002B6F39 = {
+					E4D5E47B255BCAC7002B6F39 = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
 			};
-			buildConfigurationList = E4D5E456255BB061002B6F39 /* Build configuration list for PBXProject "Week2-WedPractice(3~4)" */;
+			buildConfigurationList = E4D5E477255BCAC7002B6F39 /* Build configuration list for PBXProject "passwordValidator" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,55 +109,55 @@
 				en,
 				Base,
 			);
-			mainGroup = E4D5E452255BB061002B6F39;
-			productRefGroup = E4D5E45C255BB061002B6F39 /* Products */;
+			mainGroup = E4D5E473255BCAC7002B6F39;
+			productRefGroup = E4D5E47D255BCAC7002B6F39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4D5E45A255BB061002B6F39 /* Week2-WedPractice(3~4) */,
+				E4D5E47B255BCAC7002B6F39 /* passwordValidator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E4D5E459255BB061002B6F39 /* Resources */ = {
+		E4D5E47A255BCAC7002B6F39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D5E46B255BB063002B6F39 /* LaunchScreen.storyboard in Resources */,
-				E4D5E468255BB063002B6F39 /* Assets.xcassets in Resources */,
-				E4D5E466255BB061002B6F39 /* Main.storyboard in Resources */,
+				E4D5E48C255BCACB002B6F39 /* LaunchScreen.storyboard in Resources */,
+				E4D5E489255BCACB002B6F39 /* Assets.xcassets in Resources */,
+				E4D5E487255BCAC7002B6F39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E4D5E457255BB061002B6F39 /* Sources */ = {
+		E4D5E478255BCAC7002B6F39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D5E463255BB061002B6F39 /* ViewController.swift in Sources */,
-				E4D5E45F255BB061002B6F39 /* AppDelegate.swift in Sources */,
-				E4D5E461255BB061002B6F39 /* SceneDelegate.swift in Sources */,
+				E4D5E484255BCAC7002B6F39 /* ViewController.swift in Sources */,
+				E4D5E480255BCAC7002B6F39 /* AppDelegate.swift in Sources */,
+				E4D5E482255BCAC7002B6F39 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E4D5E464255BB061002B6F39 /* Main.storyboard */ = {
+		E4D5E485255BCAC7002B6F39 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E4D5E465255BB061002B6F39 /* Base */,
+				E4D5E486255BCAC7002B6F39 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E4D5E469255BB063002B6F39 /* LaunchScreen.storyboard */ = {
+		E4D5E48A255BCACB002B6F39 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E4D5E46A255BB063002B6F39 /* Base */,
+				E4D5E48B255BCACB002B6F39 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E4D5E46D255BB063002B6F39 /* Debug */ = {
+		E4D5E48E255BCACB002B6F39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		E4D5E46E255BB063002B6F39 /* Release */ = {
+		E4D5E48F255BCACB002B6F39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,38 +281,38 @@
 			};
 			name = Release;
 		};
-		E4D5E470255BB063002B6F39 /* Debug */ = {
+		E4D5E491255BCACB002B6F39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M27T5LV4H;
-				INFOPLIST_FILE = "Week2-WedPractice(3~4)/Info.plist";
+				INFOPLIST_FILE = passwordValidator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.song.Week2-WedPractice-3-4-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.song.passwordValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E4D5E471255BB063002B6F39 /* Release */ = {
+		E4D5E492255BCACB002B6F39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M27T5LV4H;
-				INFOPLIST_FILE = "Week2-WedPractice(3~4)/Info.plist";
+				INFOPLIST_FILE = passwordValidator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.song.Week2-WedPractice-3-4-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.song.passwordValidator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4D5E456255BB061002B6F39 /* Build configuration list for PBXProject "Week2-WedPractice(3~4)" */ = {
+		E4D5E477255BCAC7002B6F39 /* Build configuration list for PBXProject "passwordValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4D5E46D255BB063002B6F39 /* Debug */,
-				E4D5E46E255BB063002B6F39 /* Release */,
+				E4D5E48E255BCACB002B6F39 /* Debug */,
+				E4D5E48F255BCACB002B6F39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4D5E46F255BB063002B6F39 /* Build configuration list for PBXNativeTarget "Week2-WedPractice(3~4)" */ = {
+		E4D5E490255BCACB002B6F39 /* Build configuration list for PBXNativeTarget "passwordValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4D5E470255BB063002B6F39 /* Debug */,
-				E4D5E471255BB063002B6F39 /* Release */,
+				E4D5E491255BCACB002B6F39 /* Debug */,
+				E4D5E492255BCACB002B6F39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E4D5E453255BB061002B6F39 /* Project object */;
+	rootObject = E4D5E474255BCAC7002B6F39 /* Project object */;
 }

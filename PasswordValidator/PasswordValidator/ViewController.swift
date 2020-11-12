@@ -65,7 +65,7 @@ class ViewController: UIViewController {
             descriptionLabel.text = "아주 강한 암호"
         default:
             levelView.backgroundColor = .systemGray
-            descriptionLabel.text = "암호 수준"
+            descriptionLabel.text = "판별할 수 없는 암호입니다."
         }
     }
 }

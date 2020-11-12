@@ -18,12 +18,12 @@ func testInterest(unitDay: Int) -> Double {
     return deposit
 }
 
-//testInterest(unitDay: 1)
-//print()
-//print()
-//testInterest(unitDay: 10)
+_ = testInterest(unitDay: 1)
+print()
+print()
+_ = testInterest(unitDay: 10)
 
-var myGame = BullsAndCows()
+var myGame = BullsAndCows(secretNumber: 123)
 
 print(myGame.makeRandom3DigitNumbers())
 print(myGame.showGameScore())

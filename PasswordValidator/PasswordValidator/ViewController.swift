@@ -25,11 +25,13 @@ class ViewController: UIViewController {
         var symbol = CharacterSet()
         symbol.insert(charactersIn: "-+!@#$%")
         
+        // password가 각 조건을 만족하는지(e.g. 길이를 만족하는지, 특수문자를 포함하는지, etc.) 체크
         condition.length = password.count >= 8
         condition.alphabet = (password.rangeOfCharacter(from: alphabet) != nil)
         condition.number = (password.rangeOfCharacter(from: number) != nil)
         condition.symbol = (password.rangeOfCharacter(from: symbol) != nil)
         
+        // condition에 따라 level 리턴
         switch condition {
         case (length: true, alphabet: true, number: true, symbol: true):
             return 5

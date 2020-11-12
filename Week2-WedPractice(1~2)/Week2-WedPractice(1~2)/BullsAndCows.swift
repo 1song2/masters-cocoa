@@ -8,33 +8,23 @@
 import Foundation
 
 struct BullsAndCows {
-    var secretNumber: Int
-    
-    func makeRandom3DigitNumbers() -> Int {
-        var numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        var threeDigitNumbers = Array<Int>()
-        for _ in 1...3 {
-            var randomNumber = numbersArray.randomElement() ?? 0
-            if !threeDigitNumbers.contains(randomNumber) {
-                threeDigitNumbers.append(randomNumber)
-            } else {
-                numbersArray = numbersArray.filter { (number) -> Bool in
-                    number != randomNumber
-                }
-                randomNumber = numbersArray.randomElement() ?? 0
-                threeDigitNumbers.append(randomNumber)
-            }
-        }
-        return threeDigitNumbers[0] * 100 + threeDigitNumbers[1] * 10 + threeDigitNumbers[2] * 1
-    }
+    var secretNumber: Int = 0
     
     mutating func newGame() {
-        secretNumber = makeRandom3DigitNumbers()
+        var secretNumberSet = Set<Int>()
+        while secretNumberSet.count < 3 {
+            secretNumberSet.insert(Int.random(in: 0...9))
+        }
+        if let safeNumber = Int(secretNumberSet.map({ String($0) }).joined()) {
+            secretNumber = safeNumber
+        }
+        print("Secret Number: \(secretNumber)")
+        print("새 게임을 시작합니다. 세자리 숫자를 입력해주세요.")
     }
     
     func hit(num: Int) -> (strikeCount: Int, ballCount: Int) {
-        // 아직 구현 못함
-        // secretNumber와 num 매개변수 array로 쪼개서 각 자리마다 비교?
+        // 아직 구현 중
+        // secretNumber와 num 매개변수 쪼개서 각 자리마다 비교?        
         
         return (strikeCount: 3, ballCount: 0)
     }
@@ -42,9 +32,13 @@ struct BullsAndCows {
     func showGameScore() -> Bool {
         var scoresArray = Array<(strikeCount: Int, ballCount: Int)>()
         for _ in 1...9 {
-            scoresArray.append(hit(num: makeRandom3DigitNumbers()))
+            scoresArray.append(hit(num: Int(userInputNumber) ?? 0))
         }
         let has3S0B = scoresArray.contains { $0 == (strikeCount: 3, ballCount: 0) }
         return has3S0B
+    }
+    
+    func getSeparateDigits(number: Int) -> (hundreds: Int, tens: Int, unit: Int) {
+        return (hundreds: number / 100, tens: (number / 10) % 10, unit: number % 10)
     }
 }

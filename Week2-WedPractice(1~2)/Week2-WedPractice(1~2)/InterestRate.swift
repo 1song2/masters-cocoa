@@ -19,7 +19,6 @@ struct InterestRate {
         case 365...:
             return 0.056
         default:
-            // break로 작성시 Missing return in a function expected to return 'Double' 에러 발생
             return 0.0
         }
     }

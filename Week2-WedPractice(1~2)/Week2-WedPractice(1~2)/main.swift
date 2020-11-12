@@ -13,15 +13,14 @@ func testInterest(unitDay: Int) -> Double {
     var deposit = Double()
     for day in stride(from: 1, through: 365, by: unitDay) {
         deposit = mySavingAccount.calculateAmount(day: day, amount: 1000000)
-        print(deposit)
+        print("Day\(day) deposit: \(deposit)")
     }
     return deposit
 }
 
-print("===unitDay: 1===")
 testInterest(unitDay: 1)
 print()
-print("===unitDay: 10===")
+print()
 testInterest(unitDay: 10)
 
 var myGame = BullsAndCows()

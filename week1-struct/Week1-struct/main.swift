@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  week1-struct
+//  Week1-struct
 //
 //  Created by Song on 2020/11/03.
 //

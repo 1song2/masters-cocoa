@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E4AA406C2550F7B4008A20B2 /* week1-struct */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "week1-struct"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AA406C2550F7B4008A20B2 /* Week1-struct */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Week1-struct"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AA406F2550F7B4008A20B2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		E4AA40632550F7B4008A20B2 = {
 			isa = PBXGroup;
 			children = (
-				E4AA406E2550F7B4008A20B2 /* week1-struct */,
+				E4AA406E2550F7B4008A20B2 /* Week1-struct */,
 				E4AA406D2550F7B4008A20B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +49,25 @@
 		E4AA406D2550F7B4008A20B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4AA406C2550F7B4008A20B2 /* week1-struct */,
+				E4AA406C2550F7B4008A20B2 /* Week1-struct */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E4AA406E2550F7B4008A20B2 /* week1-struct */ = {
+		E4AA406E2550F7B4008A20B2 /* Week1-struct */ = {
 			isa = PBXGroup;
 			children = (
 				E4AA406F2550F7B4008A20B2 /* main.swift */,
 			);
-			path = "week1-struct";
+			path = "Week1-struct";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4AA406B2550F7B4008A20B2 /* week1-struct */ = {
+		E4AA406B2550F7B4008A20B2 /* Week1-struct */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4AA40732550F7B4008A20B2 /* Build configuration list for PBXNativeTarget "week1-struct" */;
+			buildConfigurationList = E4AA40732550F7B4008A20B2 /* Build configuration list for PBXNativeTarget "Week1-struct" */;
 			buildPhases = (
 				E4AA40682550F7B4008A20B2 /* Sources */,
 				E4AA40692550F7B4008A20B2 /* Frameworks */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = "week1-struct";
+			name = "Week1-struct";
 			productName = "week1-struct";
-			productReference = E4AA406C2550F7B4008A20B2 /* week1-struct */;
+			productReference = E4AA406C2550F7B4008A20B2 /* Week1-struct */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E4AA40672550F7B4008A20B2 /* Build configuration list for PBXProject "week1-struct" */;
+			buildConfigurationList = E4AA40672550F7B4008A20B2 /* Build configuration list for PBXProject "Week1-struct" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +109,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4AA406B2550F7B4008A20B2 /* week1-struct */,
+				E4AA406B2550F7B4008A20B2 /* Week1-struct */,
 			);
 		};
 /* End PBXProject section */
@@ -266,7 +266,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4AA40672550F7B4008A20B2 /* Build configuration list for PBXProject "week1-struct" */ = {
+		E4AA40672550F7B4008A20B2 /* Build configuration list for PBXProject "Week1-struct" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4AA40712550F7B4008A20B2 /* Debug */,
@@ -275,7 +275,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4AA40732550F7B4008A20B2 /* Build configuration list for PBXNativeTarget "week1-struct" */ = {
+		E4AA40732550F7B4008A20B2 /* Build configuration list for PBXNativeTarget "Week1-struct" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4AA40742550F7B4008A20B2 /* Debug */,

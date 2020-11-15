@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		E41815D3255295CF0063CD8D /* mission7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mission7.swift; sourceTree = "<group>"; };
 		E432672525538FBA001B15EA /* mission5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mission5.swift; sourceTree = "<group>"; };
-		E4570D00255245ED008CDE51 /* week1-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "week1-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4570D00255245ED008CDE51 /* Week1-practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Week1-practice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4570D03255245ED008CDE51 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E4570D0B25524BAB008CDE51 /* mission1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mission1.swift; sourceTree = "<group>"; };
 		E4570D0E25524BCE008CDE51 /* mission2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mission2.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		E4570CF7255245ED008CDE51 = {
 			isa = PBXGroup;
 			children = (
-				E4570D02255245ED008CDE51 /* week1-practice */,
+				E4570D02255245ED008CDE51 /* Week1-practice */,
 				E4570D01255245ED008CDE51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,12 +63,12 @@
 		E4570D01255245ED008CDE51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4570D00255245ED008CDE51 /* week1-practice */,
+				E4570D00255245ED008CDE51 /* Week1-practice */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E4570D02255245ED008CDE51 /* week1-practice */ = {
+		E4570D02255245ED008CDE51 /* Week1-practice */ = {
 			isa = PBXGroup;
 			children = (
 				E4570D03255245ED008CDE51 /* main.swift */,
@@ -80,15 +80,15 @@
 				E4570D1925527933008CDE51 /* mission6.swift */,
 				E41815D3255295CF0063CD8D /* mission7.swift */,
 			);
-			path = "week1-practice";
+			path = "Week1-practice";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4570CFF255245ED008CDE51 /* week1-practice */ = {
+		E4570CFF255245ED008CDE51 /* Week1-practice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4570D07255245ED008CDE51 /* Build configuration list for PBXNativeTarget "week1-practice" */;
+			buildConfigurationList = E4570D07255245ED008CDE51 /* Build configuration list for PBXNativeTarget "Week1-practice" */;
 			buildPhases = (
 				E4570CFC255245ED008CDE51 /* Sources */,
 				E4570CFD255245ED008CDE51 /* Frameworks */,
@@ -98,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = "week1-practice";
+			name = "Week1-practice";
 			productName = "week1-practice";
-			productReference = E4570D00255245ED008CDE51 /* week1-practice */;
+			productReference = E4570D00255245ED008CDE51 /* Week1-practice */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E4570CFB255245ED008CDE51 /* Build configuration list for PBXProject "week1-practice" */;
+			buildConfigurationList = E4570CFB255245ED008CDE51 /* Build configuration list for PBXProject "Week1-practice" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4570CFF255245ED008CDE51 /* week1-practice */,
+				E4570CFF255245ED008CDE51 /* Week1-practice */,
 			);
 		};
 /* End PBXProject section */
@@ -294,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4570CFB255245ED008CDE51 /* Build configuration list for PBXProject "week1-practice" */ = {
+		E4570CFB255245ED008CDE51 /* Build configuration list for PBXProject "Week1-practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4570D05255245ED008CDE51 /* Debug */,
@@ -303,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4570D07255245ED008CDE51 /* Build configuration list for PBXNativeTarget "week1-practice" */ = {
+		E4570D07255245ED008CDE51 /* Build configuration list for PBXNativeTarget "Week1-practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4570D08255245ED008CDE51 /* Debug */,

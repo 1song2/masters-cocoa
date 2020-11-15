@@ -1,6 +1,6 @@
 //
 //  mission1.swift
-//  week1-practice
+//  Week1-practice
 //
 //  Created by Song on 2020/11/04.
 //

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E4FF170925620F1600FA9CFC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF170825620F1600FA9CFC /* main.swift */; };
 		E4FF171125621A0D00FA9CFC /* exercise1 - matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF171025621A0D00FA9CFC /* exercise1 - matrix.swift */; };
+		E4FF171525624B2D00FA9CFC /* exercise2 - binaryNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF171425624B2D00FA9CFC /* exercise2 - binaryNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		E4FF170525620F1600FA9CFC /* Week3-MonPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Week3-MonPractice"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FF170825620F1600FA9CFC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E4FF171025621A0D00FA9CFC /* exercise1 - matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "exercise1 - matrix.swift"; sourceTree = "<group>"; };
+		E4FF171425624B2D00FA9CFC /* exercise2 - binaryNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "exercise2 - binaryNumber.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				E4FF170825620F1600FA9CFC /* main.swift */,
 				E4FF171025621A0D00FA9CFC /* exercise1 - matrix.swift */,
+				E4FF171425624B2D00FA9CFC /* exercise2 - binaryNumber.swift */,
 			);
 			path = "Week3-MonPractice";
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			files = (
 				E4FF171125621A0D00FA9CFC /* exercise1 - matrix.swift in Sources */,
 				E4FF170925620F1600FA9CFC /* main.swift in Sources */,
+				E4FF171525624B2D00FA9CFC /* exercise2 - binaryNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

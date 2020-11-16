@@ -13,7 +13,7 @@ class Matrix {
     var c: Double
     var d: Double
     
-    /// 초기화 메스드 구현
+    /// 초기화 메소드 구현
     /// 매개변수에 default 값 지정
     init(a: Double = 0.0, b: Double = 0.0, c: Double = 0.0, d: Double = 0.0) {
         self.a = a

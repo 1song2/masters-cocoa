@@ -10,6 +10,7 @@
 		E4FF170925620F1600FA9CFC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF170825620F1600FA9CFC /* main.swift */; };
 		E4FF171125621A0D00FA9CFC /* exercise1 - matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF171025621A0D00FA9CFC /* exercise1 - matrix.swift */; };
 		E4FF171525624B2D00FA9CFC /* exercise2 - binaryNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF171425624B2D00FA9CFC /* exercise2 - binaryNumber.swift */; };
+		E4FF173A2562784400FA9CFC /* exercise3 - bubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF17392562784400FA9CFC /* exercise3 - bubbleSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		E4FF170825620F1600FA9CFC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E4FF171025621A0D00FA9CFC /* exercise1 - matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "exercise1 - matrix.swift"; sourceTree = "<group>"; };
 		E4FF171425624B2D00FA9CFC /* exercise2 - binaryNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "exercise2 - binaryNumber.swift"; sourceTree = "<group>"; };
+		E4FF17392562784400FA9CFC /* exercise3 - bubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "exercise3 - bubbleSort.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E4FF170825620F1600FA9CFC /* main.swift */,
 				E4FF171025621A0D00FA9CFC /* exercise1 - matrix.swift */,
 				E4FF171425624B2D00FA9CFC /* exercise2 - binaryNumber.swift */,
+				E4FF17392562784400FA9CFC /* exercise3 - bubbleSort.swift */,
 			);
 			path = "Week3-MonPractice";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				E4FF171125621A0D00FA9CFC /* exercise1 - matrix.swift in Sources */,
 				E4FF170925620F1600FA9CFC /* main.swift in Sources */,
 				E4FF171525624B2D00FA9CFC /* exercise2 - binaryNumber.swift in Sources */,
+				E4FF173A2562784400FA9CFC /* exercise3 - bubbleSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

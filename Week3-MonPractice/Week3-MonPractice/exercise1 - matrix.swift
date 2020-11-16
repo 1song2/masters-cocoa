@@ -8,10 +8,10 @@
 import Foundation
 
 class Matrix {
-    var a : Double
-    var b : Double
-    var c : Double
-    var d : Double
+    var a: Double
+    var b: Double
+    var c: Double
+    var d: Double
     
     /// 초기화 메스드 구현
     /// 매개변수에 default 값 지정

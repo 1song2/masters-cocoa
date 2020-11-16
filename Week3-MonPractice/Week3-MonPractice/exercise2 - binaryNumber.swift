@@ -19,7 +19,7 @@ struct BinaryNumber {
         let numberOfValues = NSDecimalNumber(decimal: pow(2, total)).intValue
         for number in 0...(numberOfValues - 1) {
             if let binaryValue = Int(String(number, radix: 2)) {
-                newValues.append(String(format: "%05d", binaryValue))
+                newValues.append(String(format: "%0\(total)d", binaryValue))
             }
         }
         values = newValues

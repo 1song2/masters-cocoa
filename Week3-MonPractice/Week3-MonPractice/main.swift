@@ -23,10 +23,10 @@ import Foundation
 //print()
 
 // 연습 문제 2.
-//print("특별한 이진수 나타내는 구조체")
-//var myBinaryNumber = BinaryNumber.init(with: 5)
-//print("count = \(myBinaryNumber.count)")
-//print(myBinaryNumber.find(by: 3))
+print("특별한 이진수 나타내는 구조체")
+var myBinaryNumber = BinaryNumber.init(with: 6)
+print("count = \(myBinaryNumber.count)")
+print(myBinaryNumber.find(by: 3))
 
 // 연습 문제 3.
 print("거품 정렬 (BubbleSort) 클래스")

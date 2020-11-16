@@ -13,7 +13,7 @@ struct BinaryNumber {
     var count: Int {
         return values.count
     }
-    /// 초기화 생성 함수 (전체 비트 개수라는 것은 length of bit string 지칭)
+    /// 초기화 생성 함수 (전체 비트 개수는 length of bit string 지칭)
     init(with total: Int) {
         var newValues = Array<String>()
         let numberOfValues = NSDecimalNumber(decimal: pow(2, total)).intValue

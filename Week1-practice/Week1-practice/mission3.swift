@@ -9,7 +9,6 @@ import Foundation
 
 // 미션3. printRightTree()
 
-
 func printRightTree(lines : Int) {
     let emoji = "🎈"
     var emojiPerRow = emoji

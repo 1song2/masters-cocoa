@@ -9,7 +9,6 @@ import Foundation
 
 // 미션4. printCenterTree()
 
-
 func printCenterTree(lines : Int) {
     let emoji = "🎈"
     var emojiPerRow = emoji

@@ -31,32 +31,26 @@ struct ArrayPractice {
     }
 }
 
-/// 미션2. setBoolArray와 printArray
+
+///// 미션2. setBoolArray와 printArray
 struct BoolArray {
+    // for문 한번만 돌리도록 setBoolArray() 수정
     func setBoolArray() -> Array<Array<Bool>> {
         var outerArray = Array<Array<Bool>>()
-        for _ in 0...6 {
-            var innerArray = Array<Bool>()
-            for index in 0...6 {
-                let falseArray = Array(repeating: false, count: (7 - (index + 1)))
-                let trueArray = Array(repeating: true, count: (index + 1))
-                innerArray = falseArray + trueArray
-                outerArray.append(innerArray)
-            }
+        var innerArray = Array<Bool>()
+        for index in 0...6 {
+            let falseArray =  Array(repeating: false, count: 7 - index - 1)
+            let trueArray = Array(repeating: true, count: index + 1)
+            innerArray = falseArray + trueArray
+            outerArray.append(innerArray)
         }
         return outerArray
     }
 
+    // for문 한번만 돌리도록 printArray() 수정
     func printArray(array: Array<Array<Bool>>, newChar: Character) {
         for index in 0...6 {
-            for subIndex in 0...6 {
-                if array[index][subIndex] {
-                    print(newChar, terminator: "")
-                } else {
-                    print(" ", terminator: "")
-                }
-            }
-            print()
+            print(String(array[index].map { $0 ? newChar : " " }))
         }
     }
 }

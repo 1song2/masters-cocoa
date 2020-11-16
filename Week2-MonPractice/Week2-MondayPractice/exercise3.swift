@@ -8,6 +8,6 @@
 import Foundation
 
 // 연습문제3. 비밀번호 등급 확인
-func passwordValidator(password:String) -> Int {
-    return 3
-}
+//func passwordValidator(password:String) -> Int {
+//    return 3
+//}

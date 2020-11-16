@@ -9,7 +9,6 @@ import Foundation
 
 // 미션1. printXY()
 
-
 func printXY(max : Int) {
     for _ in 1...max {
         for i in 1...max {

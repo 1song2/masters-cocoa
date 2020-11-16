@@ -9,7 +9,6 @@ import Foundation
 
 // 미션2. printLeftTree()
 
-
 func printLeftTree(lines : Int) {
     let emoji = "🎈"
     for i in 1...lines {

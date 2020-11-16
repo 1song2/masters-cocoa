@@ -8,6 +8,6 @@
 import Foundation
 
 //연습문제5. 개미 속 퍼즐
-func antFunction(inputArray:Array<Int>) -> Array<Int> {
-    return Array<Int>()
-}
+//func antFunction(inputArray:Array<Int>) -> Array<Int> {
+//    return Array<Int>()
+//}

@@ -8,27 +8,28 @@
 import Foundation
 
 // 연습 문제 1.
-//print("행렬 계산 클래스")
-//var myMatrix = Matrix(a: 1.0, b: 2.0, c: 3.0, d: 4.0)
-//var otherMatrix = Matrix(a: 4.0, b: 3.0, c: 2.0, d: 1.0)
-//let sumResult = myMatrix.sum(with: otherMatrix)
-//let productResult = myMatrix.product(with: otherMatrix)
-//print("sumResult")
-//print(sumResult.a, sumResult.b)
-//print(sumResult.c, sumResult.d)
-//print()
-//print("productResult")
-//print(productResult.a, productResult.b)
-//print(productResult.c, productResult.d)
-//print()
+print("행렬 계산 클래스")
+var myMatrix = Matrix(a: 1.0, b: 2.0, c: 3.0, d: 4.0)
+var otherMatrix = Matrix(a: 4.0, b: 3.0, c: 2.0, d: 1.0)
+let sumResult = myMatrix.sum(with: otherMatrix)
+let productResult = myMatrix.product(with: otherMatrix)
+print("sumResult")
+print(sumResult.a, sumResult.b)
+print(sumResult.c, sumResult.d)
+print()
+print("productResult")
+print(productResult.a, productResult.b)
+print(productResult.c, productResult.d)
+print()
 
 // 연습 문제 2.
 print("특별한 이진수 나타내는 구조체")
-var myBinaryNumber = BinaryNumber.init(with: 6)
+var myBinaryNumber = BinaryNumber.init(with: 5)
 print("count = \(myBinaryNumber.count)")
 print(myBinaryNumber.find(by: 3))
+print()
 
 // 연습 문제 3.
 print("거품 정렬 (BubbleSort) 클래스")
 var myBubbleSort = BubbleSort(unsortedArray: [7, 4, 5, 1, 3])
-print(myBubbleSort.sorted(isAscending: false))
+print(myBubbleSort.sorted(isAscending: true))

@@ -18,15 +18,14 @@ class BubbleSort {
         var copyArray = unsortedArray
         func swap(aIndex: Int, bIndex: Int) {
             let aIndexValue = copyArray[aIndex]
-            let bIndexValue = copyArray[bIndex]
             if isAscending {
                 if copyArray[aIndex] > copyArray[bIndex] {
-                    copyArray[aIndex] = bIndexValue
+                    copyArray[aIndex] = copyArray[bIndex]
                     copyArray[bIndex] = aIndexValue
                 }
             } else {
                 if copyArray[aIndex] < copyArray[bIndex] {
-                    copyArray[aIndex] = bIndexValue
+                    copyArray[aIndex] = copyArray[bIndex]
                     copyArray[bIndex] = aIndexValue
                 }
             }

@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-//FIXME: - 2 + 4 + 3 = 9.0 후 + 버튼 누르면 배열에 9.0 또 들어가는 문제
     
     @IBOutlet weak var displayLabel: UILabel!
     @IBOutlet weak var stackView: UIStackView!
@@ -22,7 +20,7 @@ class ViewController: UIViewController {
         }
         return output
     }
-    var stackValuesArray = Array<Double>()
+    var numbersArray = Array<Double>()
     lazy var stackPointer = stackView.arrangedSubviews.count - 1
     var stackButton: UIButton {
         stackView.arrangedSubviews[stackPointer] as! UIButton
@@ -39,70 +37,74 @@ class ViewController: UIViewController {
     }
     
     @IBAction func operationKeysPressed(_ sender: UIButton) {
-        //calcBrain.operation = sender.currentTitle!
         if calcBrain.operation == "" {
-        //if stackValuesArray.isEmpty {
             // 아직 연산할 값이 없는 케이스
-            stackValuesArray.append(Double(displayedNumber) ?? 0.0)
+            numbersArray.append(Double(displayedNumber) ?? 0.0)
             if let buttonTitle = sender.currentTitle {
                 calcBrain.operation = buttonTitle
             }
-            stackButton.setTitleColor(.label, for: .normal)
-            stackButton.setTitle(displayedNumber, for: .normal)
-            stackPointer = (stackPointer > 0) ? stackPointer - 1 : stackView.arrangedSubviews.count - 1
+            updateStackButtonUI(title: displayedNumber)
             displayLabel.text = "0"
+            stackPointer = (stackPointer > 0) ? stackPointer - 1 : stackView.arrangedSubviews.count - 1
         } else {
             // 이미 입력되어있는 값과 연산
-            stackValuesArray.append(Double(displayedNumber) ?? 0.0)
-            if let lastNumber = stackValuesArray.popLast(),
-               let numberBeforeLast = stackValuesArray.popLast() {
+            numbersArray.append(Double(displayedNumber) ?? 0.0)
+            if let lastNumber = numbersArray.popLast(),
+               let numberBeforeLast = numbersArray.popLast() {
                 let result = calcBrain.getResult(lhsNumber: numberBeforeLast, rhsNumber: lastNumber)
-                stackValuesArray.append(result)
+                numbersArray.append(result)
                 stackButton.setTitle("\(result)", for: .normal)
+            }
+            if let buttonTitle = sender.currentTitle {
+                calcBrain.operation = buttonTitle
             }
             displayLabel.text = "0"
             stackButton.setTitleColor(.label, for: .normal)
         }
-        print("current operation symbol is \(calcBrain.operation)")
-        print("There is/are \(stackValuesArray) in stack values array")
-        print("Stack Pointer is on \(stackPointer) now")
-        print("=============================")
+        debugByPrinting()
     }
     
     @IBAction func equalsKeyPressed(_ sender: UIButton) {
-        print(calcBrain.operation)
-        stackValuesArray.append(Double(displayedNumber) ?? 0.0)
-        if let lastNumber = stackValuesArray.popLast(),
-           let numberBeforeLast = stackValuesArray.popLast() {
+        numbersArray.append(Double(displayedNumber) ?? 0.0)
+        if let lastNumber = numbersArray.popLast(),
+           let numberBeforeLast = numbersArray.popLast() {
             let result = calcBrain.getResult(lhsNumber: numberBeforeLast, rhsNumber: lastNumber)
-            print(result)
-            stackValuesArray.append(result)
+            numbersArray.append(result)
             displayLabel.text = "\(result)"
-            stackButton.setTitle("\(result)", for: .normal)
+            updateStackButtonUI(title: "\(result)")
         }
-        stackButton.setTitleColor(.label, for: .normal)
         calcBrain.operation = ""
-        print("current operation symbol is \(calcBrain.operation)")
-        print("There is/are \(stackValuesArray) in stack values array")
-        print("Stack Pointer is on \(stackPointer) now")
-        print("=============================")
+        if numbersArray.isEmpty == false {
+            numbersArray.removeLast()
+        }
+        debugByPrinting()
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
             calcBrain.allClear()
-            stackValuesArray = Array<Double>()
+            numbersArray = Array<Double>()
             displayLabel.text = "0"
             stackPointer = stackView.arrangedSubviews.count - 1
             for index in 0...4 {
                 let stackButton = stackView.arrangedSubviews[index] as! UIButton
-                stackButton.setTitle("Stack \(index)", for: .normal)
+                stackButton.setTitle("Stack \(5 - index)", for: .normal)
                 stackButton.setTitleColor(.systemGray2, for: .normal)
             }
         }
+        debugByPrinting()
+    }
+    
+    func updateStackButtonUI(title: String) {
+        stackButton.setTitle(title, for: .normal)
+        stackButton.setTitleColor(.label, for: .normal)
+    }
+    
+    func debugByPrinting() {
         print("current operation symbol is \(calcBrain.operation)")
-        print("There is/are \(stackValuesArray) in stack values array")
+        print("There is/are \(numbersArray) in the stack values array")
         print("Stack Pointer is on \(stackPointer) now")
         print("=============================")
     }
+    
 }

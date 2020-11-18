@@ -9,10 +9,6 @@ import Foundation
 
 struct CalcBrain {
     var operation = ""
-
-    mutating func allClear() {
-        operation = ""
-    }
     
     func enterNumbers(enteredNumber: String, enteringNumber: String) -> String {
         switch (enteredNumber, enteringNumber) {
@@ -45,5 +41,8 @@ struct CalcBrain {
         }
         return result
     }
-
+    
+    mutating func allClear() {
+        operation = ""
+    }
 }

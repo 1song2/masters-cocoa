@@ -101,9 +101,9 @@ class ViewController: UIViewController {
     }
     
     func debugByPrinting() {
-        print("current operation symbol is \(calcBrain.operation)")
-        print("There is/are \(numbersArray) in the stack values array")
-        print("Stack Pointer is on \(stackPointer) now")
+        print("operation: \(calcBrain.operation)")
+        print("numbersArray: \(numbersArray)")
+        print("stackPointer: \(stackPointer)")
         print("=============================")
     }
     

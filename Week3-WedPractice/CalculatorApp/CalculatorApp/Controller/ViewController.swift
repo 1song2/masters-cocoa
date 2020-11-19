@@ -40,9 +40,6 @@ class ViewController: UIViewController {
         if calcBrain.operation == "" {
             // 아직 연산할 값이 없는 케이스
             numbersArray.append(Double(displayedNumber) ?? 0.0)
-            if let buttonTitle = sender.currentTitle {
-                calcBrain.operation = buttonTitle
-            }
             updateStackButtonUI(title: displayedNumber)
             displayLabel.text = "0"
             stackPointer = (stackPointer > 0) ? stackPointer - 1 : stackView.arrangedSubviews.count - 1
@@ -55,10 +52,10 @@ class ViewController: UIViewController {
                 numbersArray.append(result)
                 updateStackButtonUI(title: "\(result)")
             }
-            if let buttonTitle = sender.currentTitle {
-                calcBrain.operation = buttonTitle
-            }
             displayLabel.text = "0"
+        }
+        if let buttonTitle = sender.currentTitle {
+            calcBrain.operation = buttonTitle
         }
         debugByPrinting()
     }

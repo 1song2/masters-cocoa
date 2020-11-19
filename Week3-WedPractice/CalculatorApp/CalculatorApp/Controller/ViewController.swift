@@ -53,13 +53,12 @@ class ViewController: UIViewController {
                let numberBeforeLast = numbersArray.popLast() {
                 let result = calcBrain.getResult(lhsNumber: numberBeforeLast, rhsNumber: lastNumber)
                 numbersArray.append(result)
-                stackButton.setTitle("\(result)", for: .normal)
+                updateStackButtonUI(title: "\(result)")
             }
             if let buttonTitle = sender.currentTitle {
                 calcBrain.operation = buttonTitle
             }
             displayLabel.text = "0"
-            stackButton.setTitleColor(.label, for: .normal)
         }
         debugByPrinting()
     }
@@ -86,9 +85,9 @@ class ViewController: UIViewController {
             numbersArray = Array<Double>()
             displayLabel.text = "0"
             stackPointer = stackView.arrangedSubviews.count - 1
-            for index in 0...4 {
+            for index in 0...stackPointer {
                 let stackButton = stackView.arrangedSubviews[index] as! UIButton
-                stackButton.setTitle("Stack \(5 - index)", for: .normal)
+                stackButton.setTitle("Stack \(stackPointer - index)", for: .normal)
                 stackButton.setTitleColor(.systemGray2, for: .normal)
             }
         }

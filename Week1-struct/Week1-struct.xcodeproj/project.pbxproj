@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E44827952567F96B00DF463F /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44827942567F96B00DF463F /* Rectangle.swift */; };
+		E44827982567F98C00DF463F /* Rectangle2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44827972567F98C00DF463F /* Rectangle2.swift */; };
+		E448279C2567F9AD00DF463F /* MyPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E448279B2567F9AD00DF463F /* MyPoint.swift */; };
+		E44827A02567F9DA00DF463F /* Rectangle3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E448279F2567F9DA00DF463F /* Rectangle3.swift */; };
+		E44827A32567FA5C00DF463F /* grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44827A22567FA5C00DF463F /* grade.swift */; };
+		E44827A72567FACC00DF463F /* gugu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44827A62567FACC00DF463F /* gugu.swift */; };
 		E4AA40702550F7B4008A20B2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AA406F2550F7B4008A20B2 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E44827942567F96B00DF463F /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		E44827972567F98C00DF463F /* Rectangle2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle2.swift; sourceTree = "<group>"; };
+		E448279B2567F9AD00DF463F /* MyPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPoint.swift; sourceTree = "<group>"; };
+		E448279F2567F9DA00DF463F /* Rectangle3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle3.swift; sourceTree = "<group>"; };
+		E44827A22567FA5C00DF463F /* grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grade.swift; sourceTree = "<group>"; };
+		E44827A62567FACC00DF463F /* gugu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gugu.swift; sourceTree = "<group>"; };
 		E4AA406C2550F7B4008A20B2 /* Week1-struct */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Week1-struct"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4AA406F2550F7B4008A20B2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				E4AA406F2550F7B4008A20B2 /* main.swift */,
+				E44827942567F96B00DF463F /* Rectangle.swift */,
+				E44827972567F98C00DF463F /* Rectangle2.swift */,
+				E448279B2567F9AD00DF463F /* MyPoint.swift */,
+				E448279F2567F9DA00DF463F /* Rectangle3.swift */,
+				E44827A22567FA5C00DF463F /* grade.swift */,
+				E44827A62567FACC00DF463F /* gugu.swift */,
 			);
 			path = "Week1-struct";
 			sourceTree = "<group>";
@@ -89,7 +107,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					E4AA406B2550F7B4008A20B2 = {
 						CreatedOnToolsVersion = 12.1;
@@ -119,7 +137,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E448279C2567F9AD00DF463F /* MyPoint.swift in Sources */,
 				E4AA40702550F7B4008A20B2 /* main.swift in Sources */,
+				E44827A02567F9DA00DF463F /* Rectangle3.swift in Sources */,
+				E44827952567F96B00DF463F /* Rectangle.swift in Sources */,
+				E44827A72567FACC00DF463F /* gugu.swift in Sources */,
+				E44827982567F98C00DF463F /* Rectangle2.swift in Sources */,
+				E44827A32567FA5C00DF463F /* grade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +268,7 @@
 		E4AA40742550F7B4008A20B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M27T5LV4H;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -255,6 +280,7 @@
 		E4AA40752550F7B4008A20B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M27T5LV4H;
 				ENABLE_HARDENED_RUNTIME = YES;

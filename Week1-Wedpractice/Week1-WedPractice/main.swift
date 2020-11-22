@@ -8,85 +8,93 @@
 import Foundation
 
 print("미션1. printXY()")
-print(printXY(max: 3))
+printXY(array: fillXY(max: 3))
 print()
-let _ = printXY(max: 3).map { innerArray in
-    print(innerArray)
+let _ = fillXY(max: 3).map { innerArray in
+    let _ = innerArray.map { item in
+        print(item, terminator: " ")
+    }
+    print()
 }
-print()
-let _ = printXY(max: 3).map { print($0) }
 print()
 
 print("미션2. printLeftTree()")
-print(printLeftTree(lines: 5))
+printLeftTree(array: fillLeftTree(lines: 5))
 print()
-let _ = printLeftTree(lines: 5).map { innerArray in
-    print(innerArray)
+let _ = fillLeftTree(lines: 5).map { innerArray in
+    let _ = innerArray.map { item in
+        print(item, terminator: "")
+    }
+    print()
 }
-print()
-let _ = printLeftTree(lines: 5).map { print($0) }
 print()
 
 print("미션3. printRightTree()")
-print(printRightTree(lines: 4))
+printRightTree(array: fillRightTree(lines: 4))
 print()
-let _ = printRightTree(lines: 4).map { row in
-    print(row)
+let _ = fillRightTree(lines: 4).map { innerArray in
+    let _ = innerArray.map { item in
+        print(item, terminator: "")
+    }
+    print()
 }
-print()
-let _ = printRightTree(lines: 4).map { print($0) }
 print()
 
 print("미션4. printCenterTree()")
-print(printCenterTree(lines: 5))
+printCenterTree(array: fillCenterTree(lines: 5))
 print()
-let _ = printCenterTree(lines: 5).map { row in
-    print(row)
+let _ = fillCenterTree(lines: 5).map { innerArray in
+    let _ = innerArray.map { item in
+        print(item, terminator: "")
+    }
+    print()
 }
-print()
-let _ = printCenterTree(lines: 5).map { print($0) }
 print()
 
 print("미션5. printNumbers()")
-print(printNumbers(lines: 5))
+printNumbers(array: fillNumbers(lines: 5))
 print()
-let _ = printNumbers(lines: 5).map { innerArray in
-    print(innerArray)
+let _ = fillNumbers(lines: 5).map { innerArray in
+    let _ = innerArray.map { item in
+        print(item, terminator: " ")
+    }
+    print()
 }
-print()
-let _ = printNumbers(lines: 5).map { print($0) }
 print()
 
 print("미션5. printSquare()")
-print(printSquare(columns : 8))
+printSquare(array: fillSquare(columns: 5))
 print()
-let _ = printSquare(columns: 8).map { innerArray in
-    print(innerArray)
+let _ = fillSquare(columns: 5).map { innerArray in
+    let _ = innerArray.map { item in
+        print(item, terminator: " ")
+    }
+    print()
 }
-print()
-let _ = printSquare(columns: 8).map { print($0) }
 print()
 
 print("미션5. printReverse()")
-print(printReverse(lines: 4))
+printReverse(array: fillReverse(lines: 4))
 print()
-let _ = printReverse(lines: 4).map { innerArray in
-    print(innerArray)
+let _ = fillReverse(lines: 5).map { innerArray in
+    let _ = innerArray.map { item in
+        print(item, terminator: " ")
+    }
+    print()
 }
-print()
-let _ = printReverse(lines: 4).map { print($0) }
-print()
-print(printReverse(lines: 5))
 print()
 
+//==============================================//
+
 print("미션6. printDiamond()")
-print(printDiamond(lines: 7))
+printDiamond(array: fillDiamond(lines: 7))
 print()
-let _ = printDiamond(lines: 7).map { row in
-    print(row)
+let _ = fillDiamond(lines: 7).map { innerArray in
+    let _ = innerArray.map { item in
+        print(item, terminator: "")
+    }
+    print()
 }
-print()
-let _ = printDiamond(lines: 7).map { print($0) }
 print()
 
 print("미션7. print3515()")

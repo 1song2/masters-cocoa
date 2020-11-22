@@ -16,10 +16,22 @@ import Foundation
 //    print()
 //}
 
-func printCenterTree(lines: Int) -> Array<String> {
-    var result = Array<String>()
+func fillCenterTree(lines: Int) -> Array<Array<String>> {
+    var outerArray = Array<Array<String>>()
     for index in 1...lines {
-        result.append(String(repeating: " ", count: lines - index) + String(repeating: "🎈 ", count: index))
+        var innerArray = Array<String>()
+        innerArray.append(String(repeating: " ", count: lines - index))
+        innerArray.append(String(repeating: "🎈 ", count: index))
+        outerArray.append(innerArray)
     }
-    return result
+    return outerArray
+}
+
+func printCenterTree(array: Array<Array<String>>) {
+    for innerArray in array {
+        for item in innerArray {
+            print(item, terminator: "")
+        }
+        print()
+    }
 }

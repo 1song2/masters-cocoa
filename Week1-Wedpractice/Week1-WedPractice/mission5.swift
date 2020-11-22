@@ -18,7 +18,7 @@ import Foundation
 //        print()
 //    }
 //}
-func printNumbers(lines: Int) -> Array<Array<Int>> {
+func fillNumbers(lines: Int) -> Array<Array<Int>> {
     var result = Array<Array<Int>>()
     var number = 1
     for index in 1...lines {
@@ -30,6 +30,15 @@ func printNumbers(lines: Int) -> Array<Array<Int>> {
         result.append(innerArray)
     }
     return result
+}
+
+func printNumbers(array: Array<Array<Int>>) {
+    for innerArray in array {
+        for item in innerArray {
+            print(item, terminator: " ")
+        }
+        print()
+    }
 }
 
 // 미션5-2. printSquare()
@@ -45,7 +54,7 @@ func printNumbers(lines: Int) -> Array<Array<Int>> {
 //        print()
 //    }
 //}
-func printSquare(columns: Int) -> Array<Array<Int>> {
+func fillSquare(columns: Int) -> Array<Array<Int>> {
     var outerArray = Array<Array<Int>>()
     var number = 1
     for _ in 1...((25 / columns) + 1) {
@@ -59,6 +68,15 @@ func printSquare(columns: Int) -> Array<Array<Int>> {
         outerArray.append(innerArray)
     }
     return outerArray
+}
+
+func printSquare(array: Array<Array<Int>>) {
+    for innerArray in array {
+        for item in innerArray {
+            print(item, terminator: " ")
+        }
+        print()
+    }
 }
 
 // 미션5-3. printReverse()
@@ -81,7 +99,7 @@ func printSquare(columns: Int) -> Array<Array<Int>> {
 //        print()
 //    }
 //}
-func printReverse(lines: Int) -> Array<Array<Int>> {
+func fillReverse(lines: Int) -> Array<Array<Int>> {
     var outerArray = Array<Array<Int>>()
     var number = 1
     for index in 1...lines {
@@ -102,4 +120,13 @@ func printReverse(lines: Int) -> Array<Array<Int>> {
         outerArray.append(innerArray)
     }
     return outerArray
+}
+
+func printReverse(array: Array<Array<Int>>) {
+    for innerArray in array {
+        for item in innerArray {
+            print(item, terminator: " ")
+        }
+        print()
+    }
 }

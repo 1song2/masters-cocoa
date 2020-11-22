@@ -17,7 +17,7 @@ import Foundation
 //    }
 //}
 
-func printXY(max: Int) -> Array<Array<Int>> {
+func fillXY(max: Int) -> Array<Array<Int>> {
     var outerArray = Array<Array<Int>>()
     for _ in 1...max {
         var innerArray = Array<Int>()
@@ -27,4 +27,13 @@ func printXY(max: Int) -> Array<Array<Int>> {
         outerArray.append(innerArray)
     }
     return outerArray
+}
+
+func printXY(array: Array<Array<Int>>) {
+    for innerArray in array {
+        for item in innerArray {
+            print(item, terminator: " ")
+        }
+        print()
+    }
 }

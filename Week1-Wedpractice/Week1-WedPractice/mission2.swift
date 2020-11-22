@@ -17,7 +17,7 @@ import Foundation
 //    }
 //}
 
-func printLeftTree(lines: Int) -> Array<Array<String>> {
+func fillLeftTree(lines: Int) -> Array<Array<String>> {
     var outerArray = Array<Array<String>>()
     for index in 1...lines {
         var innerArray = Array<String>()
@@ -27,4 +27,13 @@ func printLeftTree(lines: Int) -> Array<Array<String>> {
         outerArray.append(innerArray)
     }
     return outerArray
+}
+
+func printLeftTree(array: Array<Array<String>>) {
+    for innerArray in array {
+        for item in innerArray {
+            print(item, terminator: "")
+        }
+        print()
+    }
 }

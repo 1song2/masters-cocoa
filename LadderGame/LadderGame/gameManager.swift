@@ -11,12 +11,14 @@ let input = readLine() ?? ""
 
 struct LadderGame {
     func startGame() {
+        print("게임에 참여할 인원을 숫자로 입력한 후 enter키를 눌러주세요")
         guard let players: Int = Int(input) else {
-            fatalError("게임에 참여할 인원을 숫자로 입력해주세요.")
+            fatalError("입력값이 숫자가 아닙니다.")
         }
         
         if (players < 2 || players > 8) {
             print("인원이 너무 적거나 많아 게임을 시작할 수 없습니다.")
+            return
         } else {
             printLadder(array: self.createLadder(with: players, height: 4))
         }
@@ -46,11 +48,13 @@ struct LadderGame {
             if column % 2 != 0 {
                 steps.append("|")
             } else {
-                if Int.random(in: 0...100) % 2 == 0 {
-                    steps.append("-")
-                } else {
-                    steps.append(" ")
-                }
+                //if Int.random(in: 0...100) % 2 == 0 {
+                //    steps.append("-")
+                //} else {
+                //    steps.append(" ")
+                //}
+                //Int.random(in: 0...100) % 2 == 0 ? steps.append("-") : steps.append(" ")
+                steps.append(["-", " "].randomElement() ?? " ")
             }
         }
         return steps

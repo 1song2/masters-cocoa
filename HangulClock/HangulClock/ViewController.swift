@@ -16,69 +16,67 @@ class ViewController: UIViewController {
     @IBOutlet weak var minuteUnitLabel: UILabel!
     @IBOutlet var secondsLabelArray: [UILabel]!
     
-    let calendar = Calendar.current
-    var currentHour: Int { calendar.component(.hour, from: Date()) }
-    var currentMinutes: Int { calendar.component(.minute, from: Date()) }
-    var currentSeconds: Int { calendar.component(.second, from: Date()) }
+    var clockManager = ClockManager()
     var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clockManager.updateTime()
         updateUI(for: amPmLabelArray)
         updateUI(for: dayNightImageView)
         updateHourUI()
         updateMinutesUI()
-        updateSecondUI()
+        updateSecondsUI()
         
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateEverySecond), userInfo: nil, repeats: true)
     }
     
     @objc func updateEverySecond() {
+        clockManager.updateTime()
         updateUI(for: amPmLabelArray)
         updateUI(for: dayNightImageView)
         updateHourUI()
         updateMinutesUI()
-        updateSecondUI()
-        print(calendar.component(.second, from: Date()))
+        updateSecondsUI()
     }
     
     func updateUI(for array: [UILabel]) {
-        (array[0].alpha, array[1].alpha) = (currentHour > 12) ? (0.1, 1.0) : (1.0, 0.1)
+        (array[0].alpha, array[1].alpha) = (clockManager.getHour() > 12) ? (0.1, 1.0) : (1.0, 0.1)
     }
     
     func updateUI(for imageView: UIImageView) {
-        let sfSymbol = (currentHour >= 7 && currentHour < 19) ? "sun.max.fill" : "moon.fill"
+        let sfSymbol = (clockManager.getHour() >= 7 && clockManager.getHour() < 19) ? "sun.max.fill" : "moon.fill"
         imageView.image = UIImage(systemName: sfSymbol)
     }
     
     func updateHourUI() {
         clearUI(array: hoursLabelArray)
-        //let hourManager = Hour(value: currentHour)
-        if let safeTensPlace = Hour(value: currentHour).tensPlace {
+        let currentHour = Hour(hour: clockManager.getHour())
+        if let safeTensPlace = currentHour.tensPlace {
             hoursLabelArray[safeTensPlace].alpha = 1.0
         }
-        hoursLabelArray[Hour(value: currentHour).onesPlace.0].alpha = 1.0
-        if let safeOnesPlace = Hour(value: currentHour).onesPlace.1 {
+        hoursLabelArray[currentHour.onesPlace.0].alpha = 1.0
+        if let safeOnesPlace = currentHour.onesPlace.1 {
             hoursLabelArray[safeOnesPlace].alpha = 1.0
         }
     }
     
     func updateMinutesUI() {
         clearUI(array: minutesLabelArray)
-        minuteUnitLabel.alpha = (currentMinutes == 0) ? 0.1 : 1.0
-        //let minutesManager = Minutes(value: currentMinutes)
-        minutesLabelArray[Minutes(value: currentMinutes).tensPlace.0].alpha = 1.0
-        if let safeTensPlace = Minutes(value: currentMinutes).tensPlace.1 {
+        let currentMinutes = Minutes(minutes: clockManager.getMinutes())
+        minuteUnitLabel.alpha = (currentMinutes.minutes == 0) ? 0.1 : 1.0
+        minutesLabelArray[currentMinutes.tensPlace.0].alpha = 1.0
+        if let safeTensPlace = currentMinutes.tensPlace.1 {
             minutesLabelArray[safeTensPlace].alpha = 1.0
         }
-        minutesLabelArray[Minutes(value: currentMinutes).onesPlcae].alpha = 1.0
+        minutesLabelArray[currentMinutes.onesPlcae].alpha = 1.0
     }
     
-    func updateSecondUI() {
-        //let secondManager = Seconds(value: seconds)
-        secondsLabelArray[0].isHidden = currentSeconds == 0
-        secondsLabelArray[0].text = Seconds(value: currentSeconds).tensPlace
-        secondsLabelArray[1].text = Seconds(value: currentSeconds).onesPlcae
+    func updateSecondsUI() {
+        let currentSeconds = Seconds(seconds: clockManager.getSeconds())
+        secondsLabelArray[0].isHidden = currentSeconds.seconds == 0
+        secondsLabelArray[0].text = currentSeconds.tensPlace
+        secondsLabelArray[1].text = currentSeconds.onesPlcae
     }
     
     func clearUI(array: [UILabel]) {

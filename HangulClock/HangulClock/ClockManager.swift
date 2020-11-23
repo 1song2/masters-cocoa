@@ -7,10 +7,34 @@
 
 import Foundation
 
+struct ClockManager {
+    var time: Time?
+    
+    func getHour() -> Int {
+        return time?.hour ?? 0
+    }
+    
+    func getMinutes() -> Int {
+        return time?.minutes ?? 0
+    }
+    
+    func getSeconds() -> Int {
+        return time?.seconds ?? 0
+    }
+    
+    mutating func updateTime() {
+        let calendar = Calendar.current
+        var currentHour: Int { calendar.component(.hour, from: Date()) }
+        var currentMinutes: Int { calendar.component(.minute, from: Date()) }
+        var currentSeconds: Int { calendar.component(.second, from: Date()) }
+        time = Time(hour: currentHour, minutes: currentMinutes, seconds: currentSeconds)
+    }
+}
+
 struct Hour {
-    let value: Int
+    var hour: Int
     var tensPlace: Int? {
-        if value > 21 || (value > 0 && value < 13) {
+        if hour > 21 || (hour > 9 && hour < 13) {
             return 1
         } else {
             return nil
@@ -18,10 +42,10 @@ struct Hour {
     }
     var onesPlace: (Int, Int?) {
         //24시는 0시
-        if value == 0 {
+        if hour == 0 {
             return (0, nil)
         }
-        switch value {
+        switch hour {
         case 1, 11, 13, 23:
             return (2, nil)
         case 2, 12, 14:
@@ -47,10 +71,10 @@ struct Hour {
 }
 
 struct Minutes {
-    let value: Int
+    var minutes: Int
     var tensPlace: (Int, Int?) {
-        if value / 10 >= 1 {
-            switch value / 10 {
+        if minutes / 10 >= 1 {
+            switch minutes / 10 {
             case 2:
                 return (4, 0)
             case 3:
@@ -67,7 +91,7 @@ struct Minutes {
     }
     
     var onesPlcae: Int {
-        switch value % 10 {
+        switch minutes % 10 {
         case 1:
             return 5
         case 2:
@@ -93,9 +117,9 @@ struct Minutes {
 }
 
 struct Seconds {
-    let value: Int
+    var seconds: Int
     var tensPlace: String {
-        switch value / 10 {
+        switch seconds / 10 {
         case 1:
             return "십"
         case 2:
@@ -111,8 +135,8 @@ struct Seconds {
         }
     }
     var onesPlcae: String {
-        switch value % 10 {
-        case 0 where value == 0:
+        switch seconds % 10 {
+        case 0 where seconds == 0:
             return "정각"
         case 1:
             return "일초"

@@ -8,39 +8,23 @@
 import Foundation
 
 struct ClockManager {
-    var time: Time?
-    
-    func getHour() -> Int {
-        return time?.hour ?? 0
-    }
-    
-    func getMinutes() -> Int {
-        return time?.minutes ?? 0
-    }
-    
-    func getSeconds() -> Int {
-        return time?.seconds ?? 0
-    }
-    
-    mutating func updateTime() {
-        let calendar = Calendar.current
-        var currentHour: Int { calendar.component(.hour, from: Date()) }
-        var currentMinutes: Int { calendar.component(.minute, from: Date()) }
-        var currentSeconds: Int { calendar.component(.second, from: Date()) }
-        time = Time(hour: currentHour, minutes: currentMinutes, seconds: currentSeconds)
-    }
+    let calendar = Calendar.current
+    var currentHour: Int { calendar.component(.hour, from: Date()) }
+    var currentMinutes: Int { calendar.component(.minute, from: Date()) }
+    var currentSeconds: Int { calendar.component(.second, from: Date()) }
 }
 
 struct Hour {
     var hour: Int
     var tensPlace: Int? {
-        if hour > 21 || (hour > 9 && hour < 13) {
+        switch hour {
+        case 10, 11, 12, 22, 23:
             return 1
-        } else {
+        default:
             return nil
         }
     }
-    var onesPlace: (Int, Int?) {
+    var onesPlace: (Int?, Int?) {
         //24시는 0시
         if hour == 0 {
             return (0, nil)
@@ -65,14 +49,14 @@ struct Hour {
         case 9, 21:
             return (13, 14)
         default:
-            return (0, 0)
+            return (nil, nil)
         }
     }
 }
 
 struct Minutes {
     var minutes: Int
-    var tensPlace: (Int, Int?) {
+    var tensPlace: (Int?, Int?) {
         if minutes / 10 >= 1 {
             switch minutes / 10 {
             case 2:
@@ -87,10 +71,10 @@ struct Minutes {
                 return (4, nil)
             }
         }
-        return (0, nil)
+        return (nil, nil)
     }
     
-    var onesPlcae: Int {
+    var onesPlcae: Int? {
         switch minutes % 10 {
         case 1:
             return 5
@@ -111,7 +95,7 @@ struct Minutes {
         case 9:
             return 13
         default:
-            return 0
+            return nil
         }
     }
 }

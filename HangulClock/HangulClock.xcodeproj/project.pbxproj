@@ -14,7 +14,6 @@
 		E4C5D4BC256B49AD00959735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4C5D4BB256B49AD00959735 /* Assets.xcassets */; };
 		E4C5D4BF256B49AD00959735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4C5D4BD256B49AD00959735 /* LaunchScreen.storyboard */; };
 		E4C5D4C8256B893200959735 /* ClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C5D4C7256B893200959735 /* ClockManager.swift */; };
-		E4F58D41256C0D9F00816174 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F58D40256C0D9F00816174 /* Time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		E4C5D4BE256B49AD00959735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4C5D4C0256B49AD00959735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4C5D4C7256B893200959735 /* ClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockManager.swift; sourceTree = "<group>"; };
-		E4F58D40256C0D9F00816174 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				E4C5D4B4256B49AB00959735 /* SceneDelegate.swift */,
 				E4C5D4B6256B49AB00959735 /* ViewController.swift */,
 				E4C5D4C7256B893200959735 /* ClockManager.swift */,
-				E4F58D40256C0D9F00816174 /* Time.swift */,
 				E4C5D4B8256B49AB00959735 /* Main.storyboard */,
 				E4C5D4BB256B49AD00959735 /* Assets.xcassets */,
 				E4C5D4BD256B49AD00959735 /* LaunchScreen.storyboard */,
@@ -145,7 +142,6 @@
 			files = (
 				E4C5D4C8256B893200959735 /* ClockManager.swift in Sources */,
 				E4C5D4B7256B49AB00959735 /* ViewController.swift in Sources */,
-				E4F58D41256C0D9F00816174 /* Time.swift in Sources */,
 				E4C5D4B3256B49AB00959735 /* AppDelegate.swift in Sources */,
 				E4C5D4B5256B49AB00959735 /* SceneDelegate.swift in Sources */,
 			);

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42C14D1256F2E1100A15068 /* codesquad.csv in Resources */ = {isa = PBXBuildFile; fileRef = E42C14D0256F2E1100A15068 /* codesquad.csv */; };
 		E4F485E4256E01A4003D6A59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F485E3256E01A4003D6A59 /* AppDelegate.swift */; };
 		E4F485E6256E01A4003D6A59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F485E5256E01A4003D6A59 /* SceneDelegate.swift */; };
 		E4F485E8256E01A4003D6A59 /* CSVFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F485E7256E01A4003D6A59 /* CSVFileViewController.swift */; };
@@ -14,7 +15,6 @@
 		E4F485ED256E01A5003D6A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F485EC256E01A5003D6A59 /* Assets.xcassets */; };
 		E4F485F0256E01A5003D6A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F485EE256E01A5003D6A59 /* LaunchScreen.storyboard */; };
 		E4F485F9256E01B0003D6A59 /* CSVFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F485F8256E01B0003D6A59 /* CSVFile.swift */; };
-		E4F485FC256E0234003D6A59 /* codesquad.csv in Resources */ = {isa = PBXBuildFile; fileRef = E4F485FB256E0234003D6A59 /* codesquad.csv */; };
 		E4F48600256E227F003D6A59 /* FileSystemExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F485FF256E227F003D6A59 /* FileSystemExplorerViewController.swift */; };
 		E4F48603256E22A2003D6A59 /* FileSystemExplorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F48602256E22A2003D6A59 /* FileSystemExplorer.swift */; };
 		E4F4860C256E30BB003D6A59 /* Multithreading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4860B256E30BB003D6A59 /* Multithreading.swift */; };
@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E42C14D0256F2E1100A15068 /* codesquad.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = codesquad.csv; sourceTree = "<group>"; };
 		E4F485E0256E01A4003D6A59 /* Week4-WedPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week4-WedPractice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F485E3256E01A4003D6A59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F485E5256E01A4003D6A59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		E4F485EF256E01A5003D6A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4F485F1256E01A5003D6A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F485F8256E01B0003D6A59 /* CSVFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVFile.swift; sourceTree = "<group>"; };
-		E4F485FB256E0234003D6A59 /* codesquad.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = codesquad.csv; sourceTree = "<group>"; };
 		E4F485FF256E227F003D6A59 /* FileSystemExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemExplorerViewController.swift; sourceTree = "<group>"; };
 		E4F48602256E22A2003D6A59 /* FileSystemExplorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemExplorer.swift; sourceTree = "<group>"; };
 		E4F4860B256E30BB003D6A59 /* Multithreading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multithreading.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			children = (
 				E4F485E7256E01A4003D6A59 /* CSVFileViewController.swift */,
 				E4F485F8256E01B0003D6A59 /* CSVFile.swift */,
-				E4F485FB256E0234003D6A59 /* codesquad.csv */,
+				E42C14D0256F2E1100A15068 /* codesquad.csv */,
 			);
 			path = CSVFile;
 			sourceTree = "<group>";
@@ -169,8 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4F485FC256E0234003D6A59 /* codesquad.csv in Resources */,
 				E4F485F0256E01A5003D6A59 /* LaunchScreen.storyboard in Resources */,
+				E42C14D1256F2E1100A15068 /* codesquad.csv in Resources */,
 				E4F48614256E314B003D6A59 /* bookfile.txt in Resources */,
 				E4F485ED256E01A5003D6A59 /* Assets.xcassets in Resources */,
 				E4F485EB256E01A4003D6A59 /* Main.storyboard in Resources */,

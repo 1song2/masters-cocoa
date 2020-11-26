@@ -91,6 +91,7 @@ class Multithreading {
         autoreleasepool { () in
             let sourceText = readDataFromFile(file: "bookfile")
             let count = sourceText.components(separatedBy: word).count - 1
+            /// Thread 17: EXC_BAD_ACCESS (code=1, address=0x18) 에러 발생할 때 있음
             wordCountDict.updateValue(count, forKey: word)
             print("\(word): \(count)")
         }

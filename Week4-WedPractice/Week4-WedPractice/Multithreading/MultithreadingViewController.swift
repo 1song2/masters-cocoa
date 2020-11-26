@@ -18,14 +18,20 @@ class MultithreadingViewController: UIViewController {
         
         multithreading.doOperation()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            for index in 0..<20 {
-                self.updateUI(index: index, word: self.wordArray[index])
-            }
+        //DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+        //    for index in 0..<20 {
+        //        self.updateUI(index: index, word: self.wordArray[index])
+        //    }
+        //}
+    }
+    
+    @IBAction func countButtonPressed(_ sender: UIButton) {
+        for index in 0..<20 {
+            self.updateUI(index: index, word: self.wordArray[index])
         }
     }
     
     func updateUI(index: Int, word: String) {
-        countLabelArray[index].text = "\(multithreading.wordCountDict[word] ?? 0)"
+        countLabelArray[index].text = "\(multithreading.wordCountDict[word] ?? 0)번"
     }
 }

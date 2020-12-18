@@ -10,8 +10,8 @@ import Foundation
 print("미션1. printXY()")
 printXY(array: fillXY(max: 3))
 print()
-let _ = fillXY(max: 3).map { innerArray in
-    let _ = innerArray.map { item in
+fillXY(max: 3).forEach { innerArray in
+    innerArray.forEach { item in
         print(item, terminator: " ")
     }
     print()
@@ -21,8 +21,8 @@ print()
 print("미션2. printLeftTree()")
 printLeftTree(array: fillLeftTree(lines: 5))
 print()
-let _ = fillLeftTree(lines: 5).map { innerArray in
-    let _ = innerArray.map { item in
+fillLeftTree(lines: 5).forEach { innerArray in
+    innerArray.forEach { item in
         print(item, terminator: "")
     }
     print()
@@ -32,8 +32,8 @@ print()
 print("미션3. printRightTree()")
 printRightTree(array: fillRightTree(lines: 4))
 print()
-let _ = fillRightTree(lines: 4).map { innerArray in
-    let _ = innerArray.map { item in
+fillRightTree(lines: 4).forEach { innerArray in
+    innerArray.forEach { item in
         print(item, terminator: "")
     }
     print()
@@ -43,8 +43,8 @@ print()
 print("미션4. printCenterTree()")
 printCenterTree(array: fillCenterTree(lines: 5))
 print()
-let _ = fillCenterTree(lines: 5).map { innerArray in
-    let _ = innerArray.map { item in
+fillCenterTree(lines: 5).forEach { innerArray in
+    innerArray.forEach { item in
         print(item, terminator: "")
     }
     print()
@@ -54,8 +54,8 @@ print()
 print("미션5. printNumbers()")
 printNumbers(array: fillNumbers(lines: 5))
 print()
-let _ = fillNumbers(lines: 5).map { innerArray in
-    let _ = innerArray.map { item in
+fillNumbers(lines: 5).forEach { innerArray in
+    innerArray.forEach { item in
         print(item, terminator: " ")
     }
     print()
@@ -65,8 +65,8 @@ print()
 print("미션5. printSquare()")
 printSquare(array: fillSquare(columns: 5))
 print()
-let _ = fillSquare(columns: 5).map { innerArray in
-    let _ = innerArray.map { item in
+fillSquare(columns: 5).forEach { innerArray in
+    innerArray.forEach { item in
         print(item, terminator: " ")
     }
     print()
@@ -76,21 +76,19 @@ print()
 print("미션5. printReverse()")
 printReverse(array: fillReverse(lines: 4))
 print()
-let _ = fillReverse(lines: 5).map { innerArray in
-    let _ = innerArray.map { item in
+fillReverse(lines: 5).forEach { innerArray in
+    innerArray.forEach { item in
         print(item, terminator: " ")
     }
     print()
 }
 print()
 
-//==============================================//
-
 print("미션6. printDiamond()")
 printDiamond(array: fillDiamond(lines: 7))
 print()
-let _ = fillDiamond(lines: 7).map { innerArray in
-    let _ = innerArray.map { item in
+fillDiamond(lines: 7).forEach { innerArray in
+    innerArray.forEach { item in
         print(item, terminator: "")
     }
     print()
